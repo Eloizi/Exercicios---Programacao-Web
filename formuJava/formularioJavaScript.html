@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+
+    <style>
+    body{
+        text-align: center;
+    }
+
+    header{
+        background-color:rgb(138, 152, 206);
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    }
+
+    main{
+        background-color:rgb(220, 219, 235);
+        position: fixed;
+        top: 10%;
+        left: 0%;
+        height: 80%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        overflow: auto;
+    }
+    
+    .botao{
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    footer{
+        background-color:rgb(138, 152, 206);
+        position: fixed;
+        left: 0%;
+        bottom: 0%;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Formulário em HTML</h1>
+    </header>
+
+    <main>
+    <form action="formularioJavaScript.html">
+        <h3>Digite o nome e a nota para ver sua Menção</h3> <br><br>
+        <label for="fname">Nome do aluno:</label>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <br />
+
+
+        <label for="mencao">Nota do aluno:</label>
+        <input type="number" id="mencao" name="mencao" value=""><br>
+
+
+
+        <br /> <br />
+        
+        
+        <input class="botao" type="reset" value="Limpa">
+        <input class="botao" type="submit" value="Enviar" onclick="xyz()">
+        <br />
+    </form>
+
+    <script> 
+    function xyz(){
+        var fn, men, txt;
+        fn = document.getElementsByName("fname")[0].value;
+        mencao = parseFloat(document.getElementById("mencao").value);
+
+        if(mencao >= 9){
+            mencao = "MB";
+        }
+        if(mencao >= 7){
+            mencao = "B";
+        }
+        if(mencao >= 5){
+            mencao = "R";
+        }
+        if(mencao < 9){
+            mencao = "I";
+        }
+
+        txt = "Nome do aluno:" + " " + fn + " " + " " + " " +  "Ficou com Menção:" + " " + mencao;
+        alert(txt);
+    }
+    </script>
+
+    <br /><br />
+
+   <figure>
+       <img src="./img/13.gif" alt="" width="50%" height="50%">
+   </figure>
+
+
+    </main>
+
+    <footer>
+        <p>Programação WEBI - Eloizi Nogueira da Silva</p>
+    </footer>
+
+
+</body>
+</html>

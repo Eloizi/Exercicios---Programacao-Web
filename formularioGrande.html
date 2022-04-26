@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+
+    <style>
+    body{
+        text-align: center;
+    }
+
+    header{
+        background-color:rgb(141, 178, 214);
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    }
+
+    main{
+        background-color:rgb(192, 205, 218);
+        position: fixed;
+        top: 10%;
+        left: 0%;
+        height: 80%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        overflow: auto;
+    }
+
+    footer{
+        background-color:rgb(141, 178, 214);
+        position: fixed;
+        left: 0%;
+        bottom: 0%;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Formulário em HTML</h1>
+    </header>
+
+    <main>
+    <form action="formularioGrande.html">
+        <h3>Nome:</h3>
+        <label for="fname">Primeiro Nome:</label><br>
+        <input type="text" id="fname" name="fname" value="Nome"><br>
+        <br />
+        <label for="lname">Sobrenome</label><br>
+        <input type="text" id="lname" name="lname" value="Sobrenome"><br><br>
+
+        <label for="dt">Data:</label><br>
+        <input type="date" id="dt" name="data" ><br><br>
+
+        
+        <h3>Sexo:</h3>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+        
+        <input type="radio" id="feminino" name="genero" value ="Feminino" >
+        <label for="feminino">Feminino</label><br>
+        
+        <input type="radio" id="outro" name="genero" value = "Outro" >
+        <label for="outro">Não se Aplica</label><br>
+
+
+        <h3>Atividades:</h3>
+        <input type="checkbox" id="atividade1" name="estudo" value="sim">
+        <label for="atividade1">Eu estudo</label><br>
+        <input type="checkbox" id="atividade2" name="trabalho" value="sim">
+        <label for="atividade2">Eu trabalho - Exerço atividade remunerada</label><br>
+        
+        
+
+        <h3>Moradia:</h3>
+        <label for="moradia">Moradia</label>
+        <select id="moradia" name="moradia">
+        <option value="nada">Selecione</option>
+        <option value="casa">casa</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="chacara">Chácara</option>
+        <option value="fazenda">Fazenda</option>
+        </select>
+
+        <h3>Mensagem:</h3>
+        <textarea name="texto" id="me" rows="10" cols="60">
+            Deixe seu comentário aqui...
+        </textarea><br>
+        
+
+
+
+        
+        <br /> <br />
+        <input type="reset" value="Limpa">
+        <input type="submit" value="Enviar" onclick="xyz()">
+        <br />
+    </form>
+
+    <script> 
+    function xyz(){
+        var fn, ln, data, sex, est, trab, casa, tmen, select, txt;
+        fn = document.getElementsByName("fname")[0].value;
+        ln = document.getElementsByName("lname")[0].value;
+        data = document.getElementById("dt").value;
+        sex = document.querySelector('input[name="genero"]:checked').velue;
+        if (document.getElementById('atividade1').checked){
+            est = "sim";
+        } else{
+            est = "nao";
+        }
+        if (document.getElementById('atividade2').checked){
+            trab = "sim";
+        } else {
+            trab = "nao";
+        }
+
+        select = document.getElementById('moradia');
+        casa = select.options[select.selectedIndex].velue;
+        tmen = document.getElementById("me").value;
+
+
+        txt =  "Nome Registrado:" + " "+ fn + " " + ln +   " " + "É do genero: " + sex +  " " + "Cadastrado em: " + data +  " " + "Vive em um(a):" + casa + " " + "Estuda? " + est + " " + "Trabalha?: " + trab + " " + "Deixou a mensagem: " + tmen + " ";
+        alert(txt);
+    }
+    </script>
+
+    </main>
+
+    <footer>
+        <p>Programação WEBI - Eloizi Nogueira da Silva</p>
+    </footer>
+
+
+</body>
+</html>

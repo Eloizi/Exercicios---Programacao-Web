@@ -1,0 +1,61 @@
+
+    header{
+        background-color:burlywood ;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        height: 10%;
+        left: 0%;
+    }
+
+    footer{
+        background-color:burlywood ;
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        height: 10%;
+        left: 0%;
+    }
+
+    main{
+        background-color:rgb(223, 126, 0) ;
+        position: fixed;
+        top: 10%;
+        width: 100%;
+        height: 80%;
+        left: 0%;
+    }
+
+    h1, p, h3{
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    table, th, tr, td{
+        border: 2px solid black;
+        text-align: center;
+        font-size: 110%;
+        padding: .7em;
+        margin: 2%;
+    }
+
+    table{
+        
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .dom{
+        background-color: burlywood; 
+    }
+
+    .fer{
+        background-color: coral;
+    }
+
+    .cor{
+        background-color: rgb(253, 245, 156);
+        color:rgb(211, 156, 18);
+        font-weight: bolder;
+    }

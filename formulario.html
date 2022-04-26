@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+
+    <style>
+    body{
+        text-align: center;
+        background-color: gainsboro;
+        
+    }
+
+    header{
+       position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    }
+
+    main{
+        position: fixed;
+        top: 10%;
+        left: 0%;
+        height: 70%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 150%;
+    }
+
+    footer{
+        position: fixed;
+        left: 0%;
+        bottom: 0%;
+        height: 10%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Formulário em HTML</h1>
+    </header>
+
+    <main>
+    <form action="formulario.html">
+        <h3>Nome:</h3>
+        <label for="fname">Primeiro Nome:</label><br>
+        <input type="text" id="fname" name="fname" value="Nome"><br>
+        <br />
+        <label for="lnome">Sobrenome</label><br>
+        <input type="text" id="lname" name="lname" value="Sobrenome"><br><br>
+
+        <label for="mencao">Menção</label><br>
+        <input type="text" id="mencao" name="mencao" value="nota"><br>
+
+        <br /> <br />
+        <input type="reset" value="Limpa">
+        <input type="submit" value="Enviar" onclick="nome()">
+    </form>
+
+    <script> /*Se quiser colocar numeros no script se coloca parse*/
+    function nome(){
+        var fn, ln, men, txt;
+        fn = document.getElementById("fname").value;
+        ln = document.getElementById("lname").value;
+        men = document.getElementById("mencao").value;
+        txt = "Nome Registrado:" + " " + fn + " " + ln + " " + "Ficou com Menção:" + " " + men;
+        alert(txt);
+    }
+    </script>
+
+    </main>
+
+    <footer>
+        <p>Programação WEBI - Eloizi Nogueira da Silva</p>
+    </footer>
+
+
+</body>
+</html>
