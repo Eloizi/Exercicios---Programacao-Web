@@ -1,22 +1,11 @@
 <h1 align="center"> Junção de Projetos Web</h1>
-
-<p>
-Projetos desenvolvidos no decorrer do curso técnico em - Analise e Desenvolvimento de Sistemas na Etec Pedro D'Arcádia Neto.
-</p>
+<p>Projetos desenvolvidos no decorrer do curso técnico em - Analise e Desenvolvimento de Sistemas na Etec Pedro D'Arcádia Neto.</p>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
-
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
-<br>
-<br>
-<br>
 
 ## 🚀 Tecnologias
 
@@ -29,7 +18,8 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 
 ## 💻 Projeto
-link do projeto: <a href="https://eloizi.github.io/alura-books/" alt="link para acessar o site">Clique aqui para ver o projeto finalizado</a><br><br>
+link do projeto: <a href="
+https://eloizi.github.io/Exercicios---Programacao-Web/" alt="link para acessar o site">Clique aqui para ver o projeto finalizado</a><br><br>
 
 <!--<br>Para visualizar a versão atual do projeto é só<a href="https:/.github.io/alura-books/"> "Clicar aqui".</a>🚀 -->
 
