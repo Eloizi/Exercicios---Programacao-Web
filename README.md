@@ -1,4 +1,4 @@
-<h1 align="center"> Junção de Projetos Web</h1>
+<h1 align="center"> Junção de Projetos Web 👩‍💻 </h1>
 <p>Projetos desenvolvidos no decorrer do curso técnico em - Analise e Desenvolvimento de Sistemas na Etec Pedro D'Arcádia Neto.</p>
 
 <p align="center">
