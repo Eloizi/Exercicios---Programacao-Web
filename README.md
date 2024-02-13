@@ -18,8 +18,7 @@ Projeto desenvolvido com as seguintes tecnologias:
 
 
 ## 💻 Projeto
-link do projeto: <a href="
-https://eloizi.github.io/Exercicios---Programacao-Web/" alt="link para acessar o site">Clique aqui para ver o projeto finalizado</a><br><br>
+link do projeto: <a href="https://eloizi.github.io/Exercicios---Programacao-Web/" alt="link para acessar o site">Clique aqui para ver o projeto finalizado</a><br><br>
 
 <!--<br>Para visualizar a versão atual do projeto é só<a href="https:/.github.io/alura-books/"> "Clicar aqui".</a>🚀 -->
 
